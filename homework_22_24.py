@@ -12,24 +12,56 @@
 # 3 6 9 12 15 18
 # 6 12"
 
-import random
-import time
+# import random
+# import time
+#
+# n = (int(input("Введите количество элементов первого списка: ")))
+# m = (int(input("Введите количество элементов второго списка: ")))
+# start = time.perf_counter()
+# first = [random.randint(-10, 10) for _ in range(n)]
+# second = [random.randint(-10, 10) for _ in range(m)]
+#
+# print(*sorted(first), sep="\t")
+# print(*sorted(second), sep="\t")
+#
+# result = list()
+# for i in first:
+#     for j in second:
+#         if i == j:
+#             result.append(i)
+# print(*sorted(set(result)), sep="\t")
+# end = time.perf_counter()
+# time = end - start
+# print(f"Script execution time: {time}")
 
-n = (int(input("Введите количество элементов первого списка: ")))
-m = (int(input("Введите количество элементов второго списка: ")))
-start = time.perf_counter()
-first = [random.randint(-10, 10) for _ in range(n)]
-second = [random.randint(-10, 10) for _ in range(m)]
 
-print(*sorted(first), sep="\t")
-print(*sorted(second), sep="\t")
+# Задача 24: В фермерском хозяйстве в Карелии выращивают чернику. Она растет на
+# круглой грядке, причем кусты высажены только по окружности. Таким образом, у
+# каждого куста есть ровно два соседних. Всего на грядке растет N кустов.
+# Эти кусты обладают разной урожайностью, поэтому ко времени сбора на них
+# выросло различное число ягод – на i-ом кусте выросло ai
+#  ягод.
+# В этом фермерском хозяйстве внедрена система автоматического сбора черники.
+# Эта система состоит из модуля управления и нескольких собирающих модулей.
+# Собирающий модуль за один заход, находясь непосредственно перед некоторым
+# кустом, собирает ягоды с этого куста и с двух соседних с ним.
+# Напишите программу для нахождения максимального числа ягод, которое может
+# собрать за один заход собирающий модуль, находясь перед некоторым кустом
+# заданной во входном файле грядки.
+# 4 -> 1 2 3 4
+# 9
 
-result = list()
-for i in first:
-    for j in second:
-        if i == j:
-            result.append(i)
-print(*sorted(set(result)), sep="\t")
-end = time.perf_counter()
-time = end - start
-print(f"Script execution time: {time}")
+# import random
+# import time
+#
+# n = input("Введите количество кустов на грядке: ")
+# start = time.perf_counter()
+# numN = [random.randint(1, 5) for _ in range(int(n))]
+# print(*numN)
+# result_count = list()
+# for i in range(len(numN)):
+#     result_count.append(numN[i - 2] + numN[i - 1] + numN[i])
+# print(max(result_count))
+# end = time.perf_counter()
+# time = end - start
+# print(f"Script execution time: {time}")
